@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cheat Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: black;
+        }
+        pre {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        .ejemplo {
+            background: white;
+            padding: 10px;
+            margin-top: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi CheatSheet </h1>
+
+    <section>
+        <h2>Etiquetas básicas</h2>
+        <h3>&lt;html&gt;</h3>
+        <p>Define el documento HTML.</p>
+        <pre><code>&lt;html lang="es"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título de la página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Contenido de la página&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h3>&lt;head&gt;</h3>
+        <p>Contiene metadatos y enlaces a recursos externos.</p>
+        <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+        <h3>&lt;body&gt;</h3>
+        <p>Contiene el contenido visible de la página web.</p>
+        <pre><code>&lt;body&gt;
+    &lt;p&gt;Contenido de la página&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+        <div class="ejemplo">
+            <p>Contenido de la página</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Estructura semántica</h2>
+        <h3>&lt;header&gt;</h3>
+        <p>Define el encabezado de una sección o página.</p>
+        <pre><code>&lt;header&gt;
+    &lt;h1&gt;Bienvenido a Mi Sitio&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+        <div class="ejemplo">
+            <header>
+                <h1>Bienvenido a Mi Sitio</h1>
+            </header>
+        </div>
+
+        <h3>&lt;nav&gt;</h3>
+        <p>Define una sección de navegación.</p>
+        <pre><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#home"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;Acerda de...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+        <div class="ejemplo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de...</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h3>&lt;main&gt;</h3>
+        <p>Define el contenido principal del documento.</p>
+        <pre><code>&lt;main&gt;
+    &lt;p&gt;Contenido principal aquí.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+        <div class="ejemplo">
+            <main>
+                <p>Contenido principal aquí.</p>
+            </main>
+        </div>
+
+        <h3>&lt;aside&gt;</h3>
+        <p>Define contenido aparte del contenido principal, como barras laterales.</p>
+        <pre><code>&lt;aside&gt;
+    &lt;p&gt;Esto es un contenido adicional.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+        <div class="ejemplo">
+            <aside>
+                <p>Esto es un contenido adicional.</p>
+            </aside>
+        </div>
+
+        <h3>&lt;footer&gt;</h3>
+        <p>Define el pie de página de una sección o documento.</p>
+        <pre><code>&lt;footer&gt;
+    &lt;p&gt;© 2024 by Jonathan-Serrano&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+        <div class="ejemplo">
+            <footer>
+                <p>© 2024 By Jonathan-Serrano</p>
+            </footer>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Párrafos</h2>
+        <h3>&lt;p&gt;</h3>
+        <p>Define un párrafo de texto.</p>
+        <pre><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></pre>
+        <div class="ejemplo">
+            <p>Este es un párrafo.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Encabezados</h2>
+        <h3>&lt;h1&gt; ... &lt;h6&gt;</h3>
+        <p>Define encabezados de diferentes niveles, de <code>&lt;h1&gt;</code> (más importante) a <code>&lt;h6&gt;</code> (menos importante).</p>
+        <pre><code>&lt;h1&gt;Encabezado 1&lt;/h1&gt;
+&lt;h2&gt;Encabezado 2&lt;/h2&gt;
+&lt;h3&gt;Encabezado 3&lt;/h3&gt;
+&lt;h4&gt;Encabezado 4&lt;/h4&gt;
+&lt;h5&gt;Encabezado 5&lt;/h5&gt;
+&lt;h6&gt;Encabezado 6&lt;/h6&gt;</code></pre>
+        <div class="ejemplo">
+            <h1>Encabezado 1</h1>
+            <h2>Encabezado 2</h2>
+            <h3>Encabezado 3</h3>
+            <h4>Encabezado 4</h4>
+            <h5>Encabezado 5</h5>
+            <h6>Encabezado 6</h6>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Enlaces</h2>
+        <h3>&lt;a&gt;</h3>
+        <p>Define un hipervínculo.</p>
+        <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo&lt;/a&gt;</code></pre>
+        <div class="ejemplo">
+            <a href="https://www.ejemplo.com">Visita Ejemplo</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Listas</h2>
+        <h3>&lt;ol&gt;</h3>
+        <p>Define una lista ordenada.</p>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        <div class="ejemplo">
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+            </ol>
+        </div>
+
+        <h3>&lt;ul&gt;</h3>
+        <p>Define una lista desordenada.</p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento A&lt;/li&gt;
+    &lt;li&gt;Elemento B&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <div class="ejemplo">
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+            </ul>
+        </div>
+
+        <h3>&lt;dl&gt;</h3>
+        <p>Define una lista de definiciones.</p>
+        <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Lenguaje de marcado para crear páginas web.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+        <div class="ejemplo">
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para crear páginas web.</dd>
+            </dl>
+        </div>
+
+        <h3>&lt;li&gt;</h3>
+        <p>Define un elemento de lista.</p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento de lista&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <h3>&lt;dt&gt;</h3>
+        <p>Define un término en una lista de definiciones.</p>
+        <pre><code>&lt;dt&gt;CSS&lt;/dt&gt;</code></pre>
+
+        <h3>&lt;dd&gt;</h3>
+        <p>Define una descripción de un término en una lista de definiciones.</p>
+        <pre><code>&lt;dd&gt;Lenguaje de hojas de estilo.&lt;/dd&gt;</code></pre>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Multimedia</h2>
+        <h3>&lt;img&gt;</h3>
+        <p>Define una imagen.</p>
+        <pre><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</code></pre>
+        <div class="ejemplo">
+            <img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200">
+        </div>
+
+        <h3>&lt;audio&gt;</h3>
+        <p>Define un contenido de audio.</p>
+        <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp4" type="audio/mpeg"&gt;
+
+&lt;/audio&gt;</code></pre>
+        <div class="ejemplo">
+            <audio controls>
+                <source src="audio.m4a" type="audio/mpeg">
+                
+            </audio>
+        </div>
+
+        <h3>&lt;video&gt;</h3>
+        <p>Define un contenido de video.</p>
+        <pre><code>&lt;video controls width="250"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Tu navegador no soporta el elemento de video.
+&lt;/video&gt;</code></pre>
+        <div class="ejmeplo">
+            <video controls width="250">
+                <source src="video.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Tablas</h2>
+        <h3>&lt;table&gt;</h3>
+        <p>Define una tabla.</p>
+        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dato 1&lt;/td&gt;
+        &lt;td&gt;Dato 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        <div class="ejemplo">
+            <table border="1">
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                </tr>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>&lt;tr&gt;</h3>
+        <p>Define una fila en una tabla.</p>
+        <pre><code>&lt;tr&gt;
+    &lt;td&gt;Dato&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+
+        <h3>&lt;td&gt;</h3>
+        <p>Define una celda en una tabla.</p>
+        <pre><code>&lt;td&gt;Dato&lt;/td&gt;</code></pre>
+
+        <h3>&lt;th&gt;</h3>
+        <p>Define una celda de encabezado en una tabla.</p>
+        <pre><code>&lt;th&gt;Encabezado&lt;/th&gt;</code></pre>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Formularios</h2>
+        <h3>&lt;form&gt;</h3>
+        <p>Define un formulario HTML para la entrada del usuario.</p>
+        <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre"&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+        <div class="ejemplo">
+            <form action="/submit" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <h3>&lt;input&gt;</h3>
+        <p>Define un control de entrada en un formulario.</p>
+        <pre><code>&lt;input type="text" name="nombre"&gt;</code></pre>
+
+        <h3>&lt;select&gt;</h3>
+        <p>Define una lista desplegable.</p>
+        <pre><code>&lt;select name="opciones"&gt;
+    &lt;option value="1"&gt;Opción 1&lt;/option&gt;
+    &lt;option value="2"&gt;Opción 2&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        <div class="ejemplo">
+            <select name="opciones">
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+            </select>
+        </div>
+
+        <h3>&lt;textarea&gt;</h3>
+        <p>Define un área de texto.</p>
+        <pre><code>&lt;textarea name="mensaje"&gt;
+    Escribe tu mensaje aquí.
+&lt;/textarea&gt;</code></pre>
+        <div class="ejemplo">
+            <textarea name="mensaje">
+    Escribe tu mensaje aquí.
+            </textarea>
+        </div>
+
+        <h3>&lt;label&gt;</h3>
+        <p>Define una etiqueta para un control de formulario.</p>
+        <pre><code>&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+&lt;input type="text" id="nombre" name="nombre"&gt;</code></pre>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Variantes del elemento &lt;input&gt;</h2>
+        <h3>type="text"</h3>
+        <p>Define un campo de texto de una sola línea.</p>
+        <pre><code>&lt;input type="text" name="nombre"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="text" name="nombre">
+        </div>
+
+        <h3>type="number"</h3>
+        <p>Define un campo para números.</p>
+        <pre><code>&lt;input type="number" name="edad"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="number" name="edad">
+        </div>
+
+        <h3>type="tel"</h3>
+        <p>Define un campo para números de teléfono.</p>
+        <pre><code>&lt;input type="tel" name="telefono"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="tel" name="telefono">
+        </div>
+
+        <h3>type="email"</h3>
+        <p>Define un campo para direcciones de correo electrónico.</p>
+        <pre><code>&lt;input type="email" name="email"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="email" name="email">
+        </div>
+
+        <h3>type="password"</h3>
+        <p>Define un campo para contraseñas.</p>
+        <pre><code>&lt;input type="password" name="contrasena"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="password" name="contrasena">
+        </div>
+
+        <h3>type="radio"</h3>
+        <p>Define un botón de opción.</p>
+        <pre><code>&lt;input type="radio" name="genero" value="masculino"&gt; Masculino
+&lt;input type="radio" name="genero" value="femenino"&gt; Femenino</code></pre>
+        <div class="ejemplo">
+            <input type="radio" name="genero" value="masculino"> Masculino
+            <input type="radio" name="genero" value="femenino"> Femenino
+        </div>
+
+        <h3>type="checkbox"</h3>
+        <p>Define una casilla de verificación.</p>
+        <pre><code>&lt;input type="checkbox" name="aceptar"&gt; Acepto los términos y condiciones</code></pre>
+        <div class="ejemplo">
+            <input type="checkbox" name="aceptar"> Acepto los términos y condiciones
+        </div>
+
+        <h3>type="button"</h3>
+        <p>Define un botón que no envía el formulario.</p>
+        <pre><code>&lt;input type="button" value="Haz clic"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="button" value="Haz clic">
+        </div>
+
+        <h3>type="color"</h3>
+        <p>Define un control para seleccionar un color.</p>
+        <pre><code>&lt;input type="color" name="color favorito"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="color" name="color favorito">
+        </div>
+
+        <h3>type="date"</h3>
+        <p>Define un control para seleccionar una fecha.</p>
+        <pre><code>&lt;input type="date" name="fecha nacimiento"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="date" name="fecha nacimiento">
+        </div>
+
+        <h3>type="time"</h3>
+        <p>Define un control para seleccionar una hora.</p>
+        <pre><code>&lt;input type="time" name="hora"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="time" name="hora">
+        </div>
+
+        <h3>type="datetime-local"</h3>
+        <p>Define un control para seleccionar una fecha y hora.</p>
+        <pre><code>&lt;input type="datetime-local" name="fecha y hora"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="datetime-local" name="fecha y hora">
+        </div>
+
+        <h3>type="file"</h3>
+        <p>Define un control para subir archivos.</p>
+        <pre><code>&lt;input type="file" name="archivo"&gt;</code></pre>
+        <div class="ejemplo">
+            <input type="file" name="archivo">
+        </div>
+
+        <h3>type="hidden"</h3>
+        <p>Define un campo oculto.</p>
+        <pre><code>&lt;input type="hidden" name="id_usuario" value="123"&gt;</code></pre>
+    </section>
+</body>
+</html>
